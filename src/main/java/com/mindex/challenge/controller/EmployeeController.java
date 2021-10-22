@@ -37,7 +37,7 @@ public class EmployeeController {
         return employeeService.update(employee);
     }
 
-    @GetMapping("/employee/reports/{id}")
+    @GetMapping("/employee/reportStructure/{id}")
     public Report read_report(@PathVariable String id) {
         LOG.debug("Received employee report request for id [{}]", id);
 
